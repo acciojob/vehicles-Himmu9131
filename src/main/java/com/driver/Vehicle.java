@@ -8,6 +8,7 @@ public class Vehicle {
 public Vehicle(){
 
 }
+
     public Vehicle(String name, int currentSpeed, int currentDirection) {
         this.name=name;
         this.currentSpeed=currentSpeed;
