@@ -1,16 +1,21 @@
+package com.driver;
+
 import com.driver.WaterVehicle;
 
 public class Boat implements WaterVehicle {
-        private String boat="titanic";
-        private int capacity=2000;
+    private String name;
+    private int capacity;
 
-
+    public Boat(String name,int capacity){
+     this.name=name;
+     this.capacity=capacity;
+    }
     public String getBoat() {
-        return boat;
+        return name;
     }
 
     public void setBoat(String boat) {
-        this.boat = boat;
+        this.name = boat;
     }
 
     public int getCapacity() {
