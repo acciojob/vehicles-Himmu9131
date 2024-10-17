@@ -7,12 +7,12 @@ public class Car extends Vehicle {
     private int gears=5;
     private boolean isManual=true;
     private int currentGear=0;
+    private int seats=4;
+
+    public Car(int wheels, int doors, int gears, boolean isManual, String type, int seats) {
 
 
-    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
-        super(name);
         //Hint: Car extends Vehicle
-
         this.wheels=wheels;
         this.doors=doors;
         this.gears=gears;
@@ -20,7 +20,11 @@ public class Car extends Vehicle {
         this.type=type;
         this.seats=seats;
     }
-    private int seats;
+    public Car(String name, int currentSpeed, int currentDirection){
+        super(name,currentSpeed,currentDirection);
+
+    }
+
 
 
 

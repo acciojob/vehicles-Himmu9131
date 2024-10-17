@@ -5,7 +5,9 @@ public class Vehicle {
     private String name="ferrari";
     private int currentSpeed=0;
     private int currentDirection=0;
+public Vehicle(){
 
+}
     public Vehicle(String name, int currentSpeed, int currentDirection) {
         this.name=name;
         this.currentSpeed=currentSpeed;
