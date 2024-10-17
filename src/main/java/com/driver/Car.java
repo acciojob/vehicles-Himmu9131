@@ -1,17 +1,17 @@
 package com.driver;
 
 public class Car extends Vehicle {
-    private int wheels=4;
-    private String type="sedan";
-    private int doors=2;
-    private int gears=5;
-    private boolean isManual=true;
-    private int currentGear=0;
-    private int seats=4;
+    private int wheels;
+    private String type;
+    private int doors;
+    private int gears;
+    private boolean isManual;
+    private int currentGear;
+    private int seats;
 
-    public Car(int wheels, int doors, int gears, boolean isManual, String type, int seats) {
+    public Car(String name,int wheels, int doors, int gears, boolean isManual, String type, int seats) {
 
-
+     super(name);
         //Hint: Car extends Vehicle
         this.wheels=wheels;
         this.doors=doors;
@@ -20,14 +20,6 @@ public class Car extends Vehicle {
         this.type=type;
         this.seats=seats;
     }
-    public Car(String name, int currentSpeed, int currentDirection){
-        super(name,currentSpeed,currentDirection);
-
-    }
-
-
-
-
 
     public int getWheels() {
         return wheels;
@@ -88,12 +80,13 @@ public class Car extends Vehicle {
 
 
     public void changeGear(int newGear){
-        this.changeGear(newGear);
+        this.currentGear=newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-this.changeSpeed(newSpeed,newDirection);
+        move(newSpeed,newDirection);
+
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 }
