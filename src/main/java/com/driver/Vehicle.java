@@ -12,11 +12,7 @@ public Vehicle(String name){
     this.name=name;
 }
 
-    public Vehicle(String name, int currentSpeed, int currentDirection) {
-        this.name=name;
-        this.currentSpeed=currentSpeed;
-        this.currentDirection=currentDirection;
-    }
+
 
     public String getName() {
         return name;
