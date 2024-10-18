@@ -4,7 +4,7 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-        super("Tata", 4, 4, 4, true, "Sedan");
+        super("Tata", 4, 4, 4, true, "Sedan",7);
 
     }
 
