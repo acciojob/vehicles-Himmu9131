@@ -2,11 +2,19 @@ package com.driver;
 
 public class F1 extends Car {
 
+    boolean isManual;
+
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-        super("Tata", 4, 4, 4, true, "Sedan");
+        super(name);
+        this.isManual=isManual;
 
     }
+    @Override
+    public boolean isManual() {
+        return isManual;
+    }
+
 
     public void accelerate(int rate){
         int newSpeed = getCurrentSpeed()+rate; //set the value of new speed by using currentSpeed and rate
@@ -28,7 +36,7 @@ public class F1 extends Car {
         }
         //for all other cases, change the gear accordingly
 
-        if(newSpeed >= 0 &&newSpeed<=50) {
+        if(newSpeed >0 &&newSpeed<=50) {
             changeSpeed(newSpeed, getCurrentDirection());
         }
         if(newSpeed>=51&&newSpeed<=100){
