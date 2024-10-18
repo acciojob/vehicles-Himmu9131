@@ -10,6 +10,8 @@ public Vehicle(){
 }
 public Vehicle(String name){
     this.name=name;
+    this.currentSpeed=0;
+    this.currentDirection=0;
 }
 
 

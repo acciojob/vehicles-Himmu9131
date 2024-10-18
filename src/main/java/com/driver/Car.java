@@ -8,7 +8,9 @@ public class Car extends Vehicle {
     private boolean isManual;
     private int currentGear;
     private int seats;
-
+public Car(String name){
+    super(name);
+}
     public Car(String name,int wheels, int doors, int gears, boolean isManual, String type,int seats) {
 
      super(name);
@@ -85,7 +87,7 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-        move(newSpeed,newDirection);
+       super.move(newSpeed,newDirection);
 
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
