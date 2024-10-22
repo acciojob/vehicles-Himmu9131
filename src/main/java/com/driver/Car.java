@@ -20,6 +20,8 @@ public Car(String name){
         this.gears=gears;
         this.isManual=isManual;
         this.type=type;
+        this.seats=seats;
+        this.currentGear=1;
         
     }
 
